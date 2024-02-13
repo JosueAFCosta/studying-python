@@ -1,5 +1,5 @@
 string = input("Escreva uma frase:\n")
-
+string = string.lower()
 print("\n\n")
 print(f"Sua string:\n{string}\n")
-print(f"String sem caracteres repetidos:\n{string.replace(string[0], "$")}")
+print(f"String sem caracteres repetidos:\n{string[0] + string[1:].replace(string[0], '$')}")
